@@ -5,7 +5,10 @@ start:
     mov si, msg
     mov ah, 0x0E
 
-loop:
+loop: lodsb
+    or al, al
+    jz halt
+    int 0x10
     jmp loop
 
 halt: hlt
