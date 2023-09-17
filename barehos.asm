@@ -1,8 +1,5 @@
 [bits 16]
 [org 0x7C00]
-
-# section .data
-# section .text
 global start
 
 start:
